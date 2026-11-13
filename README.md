@@ -1,10 +1,26 @@
 # Ref2Set
 
-Turn a reference song into an editable Ableton Live 12 Suite set (.als). Ref2Set is a free Mac app. The current release analyzes the song locally and deletes the audio when each job finishes.
+Start with a track you love. Ref2Set reads its tempo, key, and structure, then builds an original, editable Ableton Live set (.als) you can shape into your own. The free Mac app analyzes the song locally and deletes the audio when each job finishes.
 
 - [Open Ref2Set](https://analyze.shabbamusic.com)
 - [Download the latest release](https://github.com/Shabbamusic/ref2set/releases/latest)
 - [SHABBA Music on YouTube](https://www.youtube.com/@ShabbaSounds)
+
+## App walkthrough
+
+These are the Before and After panels from the Ref2Set website. They illustrate the app workflow; they are not a live browser version of the Mac app.
+
+### Before the build
+
+![Ref2Set before a build: drop a song, choose from 32 genres, adjust the feel and length, then build](assets/screenshots/before-build.png)
+
+### After the build
+
+![Ref2Set after a build: generated arrangement, track lanes, reference analysis, and download actions](assets/screenshots/after-build.png)
+
+## Your first build
+
+Download and open the Mac app, drop in a reference track, choose a genre and feel, then build. Open the resulting set in Ableton Live 12 Suite and change a part until it feels like yours.
 
 ## Requirements
 

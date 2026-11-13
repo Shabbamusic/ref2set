@@ -1,37 +1,41 @@
 # Ref2Set
 
-Turn a reference song into an editable Ableton Live 12 Suite set (.als). The app is free and runs entirely on your Mac: your song is analysed locally, and the audio is deleted when each job finishes.
+Turn a reference song into an editable Ableton Live 12 Suite set (.als). Ref2Set is a free Mac app. The current release analyzes the song locally and deletes the audio when each job finishes.
 
-Website: https://analyze.shabbamusic.com/
+- [Open Ref2Set](https://analyze.shabbamusic.com)
+- [Download the latest release](https://github.com/Shabbamusic/ref2set/releases/latest)
+- [SHABBA Music on YouTube](https://www.youtube.com/@ShabbaSounds)
 
-## Download
+## Requirements
 
-Get the latest `Ref2Set-<version>.dmg` from [Releases](https://github.com/Shabbamusic/ref2set/releases). Each release lists its SHA-256 checksum. To verify your download:
-
-```bash
-shasum -a 256 ~/Downloads/Ref2Set-1.0.0.dmg
-```
-
-## What you need
-
-- A Mac with Apple silicon (M1 or newer). Intel Macs are not supported.
+- Mac with Apple silicon (M1 or newer; Intel Macs are not supported)
 - macOS 11 Big Sur or newer
 - Ableton Live 12 Suite
-- About 350 MB of disk space (116 MB download), plus about 1 MB per set
+- About 350 MB installed space; the first public download is 116 MB
 
-## Install
+## Install and run
 
-1. Open the DMG and drag **Ref2Set** into **Applications**.
-2. Double-click Ref2Set. Ref2Set is not notarised by Apple yet, so macOS says it can't verify the app. Click **Done**.
-3. Open **System Settings → Privacy & Security**, scroll to the line about Ref2Set, and click **Open Anyway**. Enter your password and confirm.
-   You only do this once. On macOS 15 and newer, right-click → Open no longer skips it.
-   Terminal alternative: `xattr -dr com.apple.quarantine /Applications/Ref2Set.app`
-4. The first launch runs a one-time setup with a progress bar, which takes under a minute. Then drop a song into the console. A song takes about half its length to analyse.
+1. Download Ref2Set-1.0.0.dmg from [Releases](https://github.com/Shabbamusic/ref2set/releases/latest).
+2. Open the DMG and drag Ref2Set into Applications.
+3. Ref2Set is not notarized by Apple yet. On first launch, macOS may block it. Click Done, then open System Settings > Privacy & Security and click Open Anyway beside Ref2Set. You only need to do this once. On macOS 15 and newer, right-click > Open no longer skips this step. Terminal alternative: xattr -dr com.apple.quarantine /Applications/Ref2Set.app.
+4. The first launch runs a one-time setup with a progress bar. Then drop a song into the console. Analysis takes about half the song's length.
 
-## Closing and removing it
+## Verify the download
 
-- Quit with ⌘Q, Dock → Quit, or the console's **Quit** button. Closing the console tab also stops it after a few seconds.
-- Your sets are saved in `~/Library/Application Support/Ref2Set/sets`.
-- To remove Ref2Set, delete the app and that folder.
+The release page lists the DMG's SHA-256 digest. For version 1.0.0, run shasum -a 256 ~/Downloads/Ref2Set-1.0.0.dmg and compare the result with the release page.
+
+## Files and removal
+
+Sets are saved in ~/Library/Application Support/Ref2Set/sets. Quit with Command-Q, Dock > Quit, or the console's Quit button. Closing the console tab also stops it after a few seconds. To remove Ref2Set, delete the app and its application-support folder.
+
+## Help and related tools
+
+For product information, visit [analyze.shabbamusic.com](https://analyze.shabbamusic.com). Report reproducible problems in [GitHub Issues](https://github.com/Shabbamusic/ref2set/issues), including your macOS and Ableton versions and the steps that led to the problem.
+
+Explore [SHABBA Plugins](https://github.com/Shabbamusic/shabba-plugins), [ARCLINE](https://github.com/Shabbamusic/arcline), [Visualizer](https://github.com/Shabbamusic/shabba-visualizer), [Audio](https://audio.shabbamusic.com), and the [SHABBA hub](https://shabbamusic.com).
+
+## Source and license
+
+This repository currently provides the Mac app through release downloads; it does not publish the app source or state a software license. The redistribution terms for the app and any third-party components need to be documented before the project is described as open source.
 
 © 2026 SHABBA Music
